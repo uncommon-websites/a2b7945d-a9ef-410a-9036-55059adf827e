@@ -26,10 +26,10 @@
 			<div class="feature-row {index % 2 === 0 ? 'feature-left' : 'feature-right'}">
 				<div class="feature-content">
 					<div class="feature-text">
-						<h2 class="feature-title">{feature.title}</h2>
-						<p class="feature-description">{feature.description}</p>
+						<h2 class="text-title2 font-[450] mb-4">{feature.title}</h2>
+						<p class="text-body text-black/70 mb-8">{feature.description}</p>
 						{#if feature.callToAction}
-							<div class="feature-cta">
+							<div class="mt-8">
 								<Button href={feature.callToAction.href} variant="secondary">
 									{feature.callToAction.label}
 								</Button>
@@ -72,7 +72,19 @@ Usage:
 
 <style>
 	.feature-row {
-		margin-bottom: var(--spacing-24);
+		margin-bottom: 4rem;
+	}
+	
+	@media (min-width: 768px) {
+		.feature-row {
+			margin-bottom: 5rem;
+		}
+	}
+	
+	@media (min-width: 1024px) {
+		.feature-row {
+			margin-bottom: 6rem;
+		}
 	}
 
 	.feature-row:last-child {
@@ -81,100 +93,59 @@ Usage:
 
 	.feature-content {
 		display: grid;
-		gap: var(--spacing-8);
+		gap: 2rem;
 		align-items: center;
 		grid-template-columns: 1fr;
 	}
+	
+	@media (min-width: 768px) {
+		.feature-content {
+			gap: 3rem;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	
+	@media (min-width: 1024px) {
+		.feature-content {
+			gap: 4rem;
+		}
+	}
+	
+	@media (min-width: 1280px) {
+		.feature-content {
+			gap: 5rem;
+		}
+	}
 
 	.feature-text {
-		order: 1;
+		@apply order-1;
 	}
 
 	.feature-image {
-		order: 2;
-		border-radius: var(--radius);
-		overflow: hidden;
-		background: var(--color-gray-100);
+		@apply order-2 rounded-lg overflow-hidden bg-gray-100;
 	}
 
 	.feature-image img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		display: block;
+		@apply w-full h-full object-cover block;
 		aspect-ratio: 16/10;
 	}
 
-	.feature-title {
-		font-size: var(--text-3xl);
-		font-weight: var(--font-semibold);
-		line-height: var(--leading-tight);
-		color: var(--color-gray-900);
-		margin-bottom: var(--spacing-4);
-	}
-
-	.feature-description {
-		font-size: var(--text-lg);
-		line-height: var(--leading-relaxed);
-		color: var(--color-gray-600);
-		margin-bottom: var(--spacing-6);
-	}
-
-	.feature-cta {
-		margin-top: var(--spacing-6);
-	}
-
-	/* Medium screens and up */
+	/* Zig-zag layout for medium screens and up */
 	@media (min-width: 768px) {
-		.feature-row {
-			margin-bottom: var(--spacing-32);
-		}
-
-		.feature-content {
-			grid-template-columns: 1fr 1fr;
-			gap: var(--spacing-12);
-		}
-
 		.feature-left .feature-text {
-			order: 1;
+			@apply order-1;
 		}
 
 		.feature-left .feature-image {
-			order: 2;
+			@apply order-2;
 		}
 
 		.feature-right .feature-text {
-			order: 2;
+			@apply order-2;
 		}
 
 		.feature-right .feature-image {
-			order: 1;
-		}
-
-		.feature-title {
-			font-size: var(--text-4xl);
-		}
-	}
-
-	/* Large screens */
-	@media (min-width: 1024px) {
-		.feature-content {
-			gap: var(--spacing-16);
-		}
-
-		.feature-title {
-			font-size: var(--text-5xl);
-		}
-
-		.feature-description {
-			font-size: var(--text-xl);
-		}
-	}
-
-	/* Extra large screens */
-	@media (min-width: 1280px) {
-		.feature-content {
-			gap: var(--spacing-20);
+			@apply order-1;
 		}
 	}
 </style>
