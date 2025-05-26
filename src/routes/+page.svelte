@@ -7,16 +7,50 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+<CustomerCardHero
+  centered={true}
+  title="Proven performance for the world’s toughest sites"
+  subtitle="Trusted by leaders at CEMEX and Lhoist, sensmore helps heavy machines work smarter—improving safety, cutting downtime, and keeping productivity on track."
+  customers={[
+    {
+      name: "Thomas Weber",
+      position: "Head of Quarry Operations, CEMEX",
+      imageSrc: "/generated/image-a-middle-aged-male-mining-operations-man.webp"
+    },
+    {
+      name: "Nicolai Hecker",
+      position: "Extraction Department, Lhoist",
+      imageSrc: "/generated/image-an-older-male-industrial-plant-superviso.webp"
+    },
+    {
+      name: "Laura Schmidt",
+      position: "Project Manager, Construction",
+      imageSrc: "/generated/image-an-adult-female-project-manager-in-a-yel.webp"
+    },
+    {
+      name: "Mark Bausch",
+      position: "Technician, Heavy Machinery",
+      imageSrc: "/generated/image-a-mature-male-technician-in-dark-blue-ov.webp"
+    },
+    {
+      name: "Sophie Berger",
+      position: "Engineer, Civil Works",
+      imageSrc: "/generated/image-a-young-female-engineer-dressed-in-a-con.webp"
+    }
+  ]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://logo.clearbit.com/bhp.com',
+		'https://logo.clearbit.com/cat.com',
+		'https://logo.clearbit.com/cemex.com',
+		'https://logo.clearbit.com/liebherr.com'
+	]}
+/>
 
 <Summary
 	generating
