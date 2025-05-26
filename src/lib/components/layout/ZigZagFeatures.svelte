@@ -118,34 +118,40 @@ Usage:
 	}
 
 	.feature-text {
-		@apply order-1;
+		order: 1;
 	}
 
 	.feature-image {
-		@apply order-2 rounded-lg overflow-hidden bg-gray-100;
+		order: 2;
+		border-radius: 0.5rem;
+		overflow: hidden;
+		background-color: rgb(243 244 246);
 	}
 
 	.feature-image img {
-		@apply w-full h-full object-cover block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
 		aspect-ratio: 16/10;
 	}
 
 	/* Zig-zag layout for medium screens and up */
 	@media (min-width: 768px) {
 		.feature-left .feature-text {
-			@apply order-1;
+			order: 1;
 		}
 
 		.feature-left .feature-image {
-			@apply order-2;
+			order: 2;
 		}
 
 		.feature-right .feature-text {
-			@apply order-2;
+			order: 2;
 		}
 
 		.feature-right .feature-image {
-			@apply order-1;
+			order: 1;
 		}
 	}
 </style>
