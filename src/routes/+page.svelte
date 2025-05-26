@@ -10,15 +10,69 @@
 	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<CustomerCardHero
-  centered={true}
-  title="Physical AI for the world's largest machines"
-  subtitle="Making heavy machinery intelligent, safe, and ready for every tough task. From mining and construction to agriculture and defense—reduce downtime by 30% while keeping people safe."
-  callsToAction={[
-    { href: '/book-demo', label: 'Book a demo' },
-    { href: '/contact', label: 'See it in action' }
-  ]}
-/>
+<style>
+	/* Override CustomerCardHero text colors for dark gradient background */
+	:global(.hero-section h1) {
+		color: white !important;
+	}
+	
+	:global(.hero-section p) {
+		color: rgba(255, 255, 255, 0.9) !important;
+	}
+	
+	:global(.hero-section .text-gray-900) {
+		color: white !important;
+	}
+	
+	:global(.hero-section .text-gray-600) {
+		color: rgba(255, 255, 255, 0.8) !important;
+	}
+</style>
+
+<!-- Hero section with industrial gradient background -->
+<div class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-700 to-blue-900">
+	<!-- Multi-layered industrial gradient for depth -->
+	<div class="absolute inset-0 bg-gradient-to-r from-blue-900/30 via-slate-800/20 to-gray-700/40"></div>
+	<div class="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-transparent to-slate-800/60"></div>
+	<!-- Subtle earth tone overlay for heavy machinery aesthetic -->
+	<div class="absolute inset-0 bg-gradient-to-tr from-amber-900/10 via-transparent to-orange-900/5"></div>
+	
+	<CustomerCardHero
+	  centered={true}
+	  title="Physical AI for the world's largest machines"
+	  subtitle="Making heavy machinery intelligent, safe, and ready for every tough task. From mining and construction to agriculture and defense—reduce downtime by 30% while keeping people safe."
+	  callsToAction={[
+	    { href: '/book-demo', label: 'Book a demo' },
+	    { href: '/contact', label: 'See it in action' }
+	  ]}
+	/>
+	
+	<!-- Video section integrated into hero area -->
+	<div class="relative z-10 pb-24 section-px">
+		<div class="mx-auto max-w-6xl">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+					See our technology in action
+				</h2>
+				<p class="mt-4 text-lg text-gray-300">
+					Watch how sensmore's Physical AI transforms heavy machinery operations
+				</p>
+			</div>
+			<div class="mx-auto max-w-4xl">
+				<div class="relative aspect-video overflow-hidden rounded-xl shadow-2xl bg-gray-900 ring-1 ring-gray-200/20">
+					<iframe
+						src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+						title="sensmore Technology Demonstration"
+						class="absolute inset-0 h-full w-full"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <LogoScroller
 	label="Trusted by industry leaders"
 	logoUrls={[
@@ -28,30 +82,6 @@
 		'https://logo.clearbit.com/liebherr.com'
 	]}
 />
-
-<section class="section-py section-px">
-	<div class="mx-auto max-w-6xl">
-		<div class="text-center section-pb-sm">
-			<h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-				See our technology in action
-			</h2>
-			<p class="mt-4 text-lg text-gray-600">
-				Watch how sensmore's Physical AI transforms heavy machinery operations
-			</p>
-		</div>
-		<div class="mx-auto max-w-4xl">
-			<div class="relative aspect-video overflow-hidden rounded-xl shadow-2xl bg-gray-900">
-				<iframe
-					src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-					title="sensmore Technology Demonstration"
-					class="absolute inset-0 h-full w-full"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					allowfullscreen
-				></iframe>
-			</div>
-		</div>
-	</div>
-</section>
 
 <ZigZagFeatures
 	features={[
