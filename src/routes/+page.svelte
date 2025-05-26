@@ -1,7 +1,6 @@
 <script lang="ts">
 	// Components
 	import UseCases from "$lib/components/layout/UseCases.svelte";
-	import Summary from "$lib/components/layout/Summary.svelte";
 	import Features from "$lib/components/layout/Features.svelte";
 	import Testimonials from "$lib/components/layout/Testimonials.svelte";
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
@@ -50,11 +49,6 @@
 		'https://logo.clearbit.com/cemex.com',
 		'https://logo.clearbit.com/liebherr.com'
 	]}
-/>
-
-<Summary
-	title="What we do"
-	text="sensmore brings intelligent automation and AI to the world’s largest off-highway machines—improving safety, reducing downtime, and increasing efficiency for mining, construction, agriculture, and defense operations. Our integrated physical AI platform turns complex worksites into intelligent, responsive systems."
 />
 
 <Testimonials
