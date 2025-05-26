@@ -15,7 +15,7 @@
 	import { browser } from "$app/environment";
 	import { page } from "$app/state";
 	import { CONFIG } from "$lib/content";
-	import { navHeight } from "$lib/state/nav.svelte.ts";
+	import { navHeight } from "$lib/state/nav.svelte";
 
 	const isTouchDevice = new MediaQuery("(pointer: coarse)");
 

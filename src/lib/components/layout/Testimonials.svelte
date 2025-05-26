@@ -98,7 +98,7 @@
 		};
 
 		// Debounce resize handler for better performance
-		let resizeTimer: number;
+		let resizeTimer: ReturnType<typeof setTimeout>;
 		const handleResize = () => {
 			clearTimeout(resizeTimer);
 			resizeTimer = setTimeout(() => {

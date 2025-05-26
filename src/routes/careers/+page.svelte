@@ -197,7 +197,7 @@
 <SecondaryHero
 	title="Build the future of intelligent machines"
 	subtitle="Join a collaborative team shaping how the world's toughest machinery thinks and moves"
-	image="/generated/image-a-diverse-group-of-professionals-collabo.webp"
+	imageSrc="/generated/image-a-diverse-group-of-professionals-collabo.webp"
 />
 
 <!-- Why Join Us Section -->

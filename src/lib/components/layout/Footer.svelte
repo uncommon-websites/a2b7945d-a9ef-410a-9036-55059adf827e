@@ -39,14 +39,14 @@
 						<ul class="mt-4 flex flex-col gap-1.5">
 							{#each section.children.filter((child) => child.showInFooter !== false) as item}
 								<li>
-									<a href={item.href} class="" target={item?.target || undefined}>
+									<a href={item.href} class="">
 										{item.label}
 									</a>
 								</li>
 							{/each}
 						</ul>
 					{:else}
-						<a href={section.href} class="" target={section?.target || undefined}>
+						<a href={section.href} class="">
 							{section.label}
 						</a>
 					{/if}

@@ -67,13 +67,15 @@
 					{/each}
 				</div>
 				<article class="row-start-2">
-					<p class="text-body text-gray-500">{useCases[current].description}</p>
-					{#if useCases[current]?.link}
-						<div class="mt-6">
-							<Button href={useCases[current].link.href} variant="secondary">
-								{useCases[current].link.label}
-							</Button>
-						</div>
+					{#if useCases[current]}
+						<p class="text-body text-gray-500">{useCases[current].description}</p>
+						{#if useCases[current]?.link}
+							<div class="mt-6">
+								<Button href={useCases[current]?.link?.href} variant="secondary">
+									{useCases[current]?.link?.label}
+								</Button>
+							</div>
+						{/if}
 					{/if}
 				</article>
 			</div>

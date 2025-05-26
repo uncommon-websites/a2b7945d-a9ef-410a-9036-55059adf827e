@@ -15,8 +15,11 @@ devDependencies:
     specifier: ^1.6.13
     version: 1.7.0
   '@iconify-json/lucide':
-    specifier: ^1.2.35
+    specifier: ^1.2.44
     version: 1.2.44
+  '@iconify/json':
+    specifier: ^2.2.341
+    version: 2.2.341
   '@number-flow/svelte':
     specifier: ^0.3.7
     version: 0.3.7(svelte@5.33.2)
@@ -32,6 +35,9 @@ devDependencies:
   '@tailwindcss/vite':
     specifier: ^4.1.3
     version: 4.1.7(vite@6.3.5)
+  '@types/node':
+    specifier: ^22.15.21
+    version: 22.15.21
   bits-ui:
     specifier: ^1.3.19
     version: 1.8.0(svelte@5.33.2)
@@ -79,7 +85,7 @@ devDependencies:
     version: 22.1.0(svelte@5.33.2)
   vite:
     specifier: ^6.2.6
-    version: 6.3.5
+    version: 6.3.5(@types/node@22.15.21)
   vite-plugin-component-tagger:
     specifier: ^0.2.6
     version: 0.2.6(vite@6.3.5)
@@ -466,6 +472,13 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
+  /@iconify/json@2.2.341:
+    resolution: {integrity: sha512-IwH6m5hbVRtjBcmcI7xI6/H3VV3Tt0rqzWO4UxV1L82Cv32CsnvwpykLe9a2DgC06/gnrCmp3vgEzPsEHzndqg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+      pathe: 1.1.2
+    dev: true
+
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
@@ -763,7 +776,7 @@ packages:
       set-cookie-parser: 2.7.1
       sirv: 3.0.1
       svelte: 5.33.2
-      vite: 6.3.5
+      vite: 6.3.5(@types/node@22.15.21)
     dev: true
 
   /@sveltejs/vite-plugin-svelte-inspector@4.0.1(@sveltejs/vite-plugin-svelte@5.0.3)(svelte@5.33.2)(vite@6.3.5):
@@ -777,7 +790,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 5.0.3(svelte@5.33.2)(vite@6.3.5)
       debug: 4.4.1
       svelte: 5.33.2
-      vite: 6.3.5
+      vite: 6.3.5(@types/node@22.15.21)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -795,7 +808,7 @@ packages:
       kleur: 4.1.5
       magic-string: 0.30.17
       svelte: 5.33.2
-      vite: 6.3.5
+      vite: 6.3.5(@types/node@22.15.21)
       vitefu: 1.0.6(vite@6.3.5)
     transitivePeerDependencies:
       - supports-color
@@ -963,7 +976,7 @@ packages:
       '@tailwindcss/node': 4.1.7
       '@tailwindcss/oxide': 4.1.7
       tailwindcss: 4.1.7
-      vite: 6.3.5
+      vite: 6.3.5(@types/node@22.15.21)
     dev: true
 
   /@types/cookie@0.6.0:
@@ -976,6 +989,12 @@ packages:
 
   /@types/json-schema@7.0.15:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
+    dev: true
+
+  /@types/node@22.15.21:
+    resolution: {integrity: sha512-EV/37Td6c+MgKAbkcLG6vqZ2zEYHD7bvSrzqqs2RIhbA6w3x+Dqz8MZM3sP6kGTeLrdoOgKZe+Xja7tUB2DNkQ==}
+    dependencies:
+      undici-types: 6.21.0
     dev: true
 
   /@typescript-eslint/eslint-plugin@8.32.1(@typescript-eslint/parser@8.32.1)(eslint@9.27.0)(typescript@5.8.3):
@@ -2057,6 +2076,10 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /pathe@1.1.2:
+    resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
+    dev: true
+
   /pathe@2.0.3:
     resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
     dev: true
@@ -2520,6 +2543,10 @@ packages:
     resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
     dev: true
 
+  /undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+    dev: true
+
   /unplugin-icons@22.1.0(svelte@5.33.2):
     resolution: {integrity: sha512-ect2ZNtk1Zgwb0NVHd0C1IDW/MV+Jk/xaq4t8o6rYdVS3+L660ZdD5kTSQZvsgdwCvquRw+/wYn75hsweRjoIA==}
     peerDependencies:
@@ -2578,10 +2605,10 @@ packages:
     peerDependencies:
       vite: '>=5.0.0'
     dependencies:
-      vite: 6.3.5
+      vite: 6.3.5(@types/node@22.15.21)
     dev: true
 
-  /vite@6.3.5:
+  /vite@6.3.5(@types/node@22.15.21):
     resolution: {integrity: sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
@@ -2621,6 +2648,7 @@ packages:
       yaml:
         optional: true
     dependencies:
+      '@types/node': 22.15.21
       esbuild: 0.25.4
       fdir: 6.4.4(picomatch@4.0.2)
       picomatch: 4.0.2
@@ -2639,7 +2667,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 6.3.5
+      vite: 6.3.5(@types/node@22.15.21)
     dev: true
 
   /webpack-virtual-modules@0.6.2:

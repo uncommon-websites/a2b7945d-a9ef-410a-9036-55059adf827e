@@ -78,13 +78,16 @@
       image: "https://cdn.brandfetch.io/tiny.vc/w/400/h/400/logo?c=1a2b3c4d5e"
     },
     {
-      name: "Acequia Capital"
+      name: "Acequia Capital",
+      image: "https://via.placeholder.com/400x400/e5e7eb/6b7280?text=AC"
     },
     {
-      name: "Prototype Capital"
+      name: "Prototype Capital",
+      image: "https://via.placeholder.com/400x400/e5e7eb/6b7280?text=PC"
     },
     {
-      name: "Entrepreneur First"
+      name: "Entrepreneur First",
+      image: "https://via.placeholder.com/400x400/e5e7eb/6b7280?text=EF"
     }
   ]}
 />
