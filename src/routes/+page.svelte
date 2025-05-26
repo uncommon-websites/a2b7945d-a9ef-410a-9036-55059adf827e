@@ -11,8 +11,9 @@
 
 <CustomerCardHero
   centered={true}
-  title="Proven performance for the world’s toughest sites"
+  title="Proven performance for the world's toughest sites"
   subtitle="Trusted by leaders at CEMEX and Lhoist, sensmore helps heavy machines work smarter—improving safety, cutting downtime, and keeping productivity on track."
+  callsToAction={[]}
   customers={[
     {
       name: "Thomas Weber",
@@ -28,16 +29,6 @@
       name: "Laura Schmidt",
       position: "Project Manager, Construction",
       imageSrc: "/generated/image-an-adult-female-project-manager-in-a-yel.webp"
-    },
-    {
-      name: "Mark Bausch",
-      position: "Technician, Heavy Machinery",
-      imageSrc: "/generated/image-a-mature-male-technician-in-dark-blue-ov.webp"
-    },
-    {
-      name: "Sophie Berger",
-      position: "Engineer, Civil Works",
-      imageSrc: "/generated/image-a-young-female-engineer-dressed-in-a-con.webp"
     }
   ]}
 />
@@ -60,22 +51,6 @@
 			quote:
 				"We've reduced crusher downtime by 27% since installing sensmore Eye. Its live alerts and level monitoring make a real difference.",
 			image: "/generated/image-a-female-mining-manager-at-a-site-wearin.webp"
-		},
-		{
-			name: "Lars Heldt",
-			position: "Director of Field Operations, Triton Construction",
-			company: "Triton Construction",
-			quote:
-				"Machine Assist helped prevent two major collisions last quarter. It's become essential to keeping our crews safe.",
-			image: "/generated/image-a-male-construction-foreman-on-a-bustlin.webp"
-		},
-		{
-			name: "Monika Rey",
-			position: "Precision Ag Lead, GreenFields Co-op",
-			company: "GreenFields Co-op",
-			quote:
-				"With Site OS we cut route planning time by 40%. It’s made daily logistics smoother and reduced idle time across our fleet.",
-			image: "/generated/image-a-female-agriculture-specialist-in-a-coz.webp"
 		}
 	]}
 />
@@ -149,7 +124,7 @@
 <CallToAction
   title="Project operational peace of mind"
   subtitle="Trusted AI that brings safer, smarter machines to your site"
-  description="sensmore makes heavy machinery intelligent—with automation that’s proven in the field, fast to deploy, and works on your existing fleet. Increase safety and productivity from day one—no surprises, no complex rollout."
+  description="sensmore makes heavy machinery intelligent—with automation that's proven in the field, fast to deploy, and works on your existing fleet. Increase safety and productivity from day one—no surprises, no complex rollout."
   imageSrc="/generated/image-a-cheerful-male-site-manager-in-a-mining.webp"
   callsToAction={[
     { href: '/book-demo', label: 'Book a demo', variant: 'primary' },
