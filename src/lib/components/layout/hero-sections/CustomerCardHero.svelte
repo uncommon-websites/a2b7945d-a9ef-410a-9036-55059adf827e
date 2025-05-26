@@ -66,10 +66,10 @@ It should ALWAYS have between 3 and 5 customers!
 	});
 </script>
 
-<div class="bg-background" {...rest}>
+<div class="bg-background h-screen flex flex-col" {...rest}>
 	<header
 		class={[
-			"section-px container mx-auto grid items-end gap-16 gap-y-9 text-balance",
+			"section-px container mx-auto grid items-end gap-16 gap-y-9 text-balance flex-1",
 			centered ? "place-items-center py-16 text-center" : "mb-12 pt-24 xl:grid-cols-[1fr_auto]"
 		]}
 		data-enter-container
@@ -112,7 +112,7 @@ It should ALWAYS have between 3 and 5 customers!
 	</header>
 
 	<div
-		class="mt-4 grid flex-nowrap gap-(--card-gap) overflow-x-auto px-(--card-gap) whitespace-nowrap [--card-gap:calc(var(--radius)/2)] [--gap:--spacing(5)] max-lg:auto-cols-max max-lg:grid-flow-col md:whitespace-normal lg:grid-cols-[var(--cols)] lg:flex-wrap"
+		class="section-px container mx-auto mt-4 grid flex-nowrap gap-(--card-gap) overflow-x-auto px-(--card-gap) whitespace-nowrap [--card-gap:calc(var(--radius)/2)] [--gap:--spacing(5)] max-lg:auto-cols-max max-lg:grid-flow-col md:whitespace-normal lg:grid-cols-[var(--cols)] lg:flex-wrap pb-16"
 		style:--cols="repeat({customers.length},1fr)"
 	>
 		{#each customers as customer, index}
