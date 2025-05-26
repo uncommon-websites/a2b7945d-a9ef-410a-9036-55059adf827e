@@ -35,135 +35,171 @@ Please update features according to the company's product offering. Do not remov
 
 	// Props
 	const {
-		title = "Simple, transparent pricing",
-		subtitle = "Choose the plan that works best for your needs",
-		tierNames = ["Starter", "Pro", "Enterprise"],
+		title = "Plans that scale with your site",
+		subtitle = "Whether you're upgrading core machines with precision safety tech, need real-time site intelligence, or looking to automate workflows end-to-end—sensmore has a plan that fits your operation.",
+		tierNames = ["Essentials", "Advanced", "Custom"],
 		features = [
 			{
-				name: "Projects",
+				name: "Machine Assist (human, vehicle, object detection)",
 				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
-					Enterprise: "Unlimited"
+					Essentials: true,
+					Advanced: true,
+					Custom: true
 				}
 			},
 			{
-				name: "Team members",
+				name: "Driver alerts & proximity warnings",
 				tiers: {
-					Starter: "1",
-					Pro: "10",
-					Enterprise: "Unlimited"
+					Essentials: true,
+					Advanced: true,
+					Custom: true
 				}
 			},
 			{
-				name: "Storage",
+				name: "GNSS-based live localization",
 				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
-					Enterprise: "Unlimited"
+					Essentials: "cm-precision",
+					Advanced: "cm-precision",
+					Custom: "cm-precision"
 				}
 			},
 			{
-				name: "API access",
+				name: "Site OS dashboard & zone management",
 				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
+					Essentials: "Basic visibility",
+					Advanced: "Advanced sitewide",
+					Custom: "Full access & customization"
 				}
 			},
 			{
-				name: "Custom domains",
+				name: "Material/production flow visualization",
 				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
+					Essentials: true,
+					Advanced: true,
+					Custom: true
 				}
 			},
 			{
-				name: "Analytics",
+				name: "Eye: crusher & belt monitoring",
 				tiers: {
-					Starter: "Basic",
-					Pro: "Advanced",
-					Enterprise: "Advanced"
+					Essentials: false,
+					Advanced: true,
+					Custom: true
 				}
 			},
 			{
-				name: "Support response time",
+				name: "Live Mapping (3D digital twin)",
 				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
+					Essentials: false,
+					Advanced: true,
+					Custom: true
+				}
+			},
+			{
+				name: "Loader Automation",
+				tiers: {
+					Essentials: false,
+					Advanced: false,
+					Custom: true
+				}
+			},
+			{
+				name: "API & 3rd-party integration",
+				tiers: {
+					Essentials: false,
+					Advanced: true,
+					Custom: true
+				}
+			},
+			{
+				name: "Training & onboarding",
+				tiers: {
+					Essentials: false,
+					Advanced: true,
+					Custom: "On-site & remote"
+				}
+			},
+			{
+				name: "Support coverage",
+				tiers: {
+					Essentials: "Email (business hours)",
+					Advanced: "Priority phone & review",
+					Custom: "24/7 phone & on-site"
+				}
+			},
+			{
+				name: "Service Level Agreements (SLA)",
+				tiers: {
+					Essentials: false,
+					Advanced: "95%+ uptime",
+					Custom: "Contractual, custom targets"
 				}
 			},
 			{
 				name: "Dedicated account manager",
 				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: true
-				}
-			},
-			{
-				name: "SLA",
-				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
+					Essentials: false,
+					Advanced: false,
+					Custom: true
 				}
 			}
 		],
 		tiers = [
 			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
+				name: "Essentials",
+				monthlyPrice: null,
+				yearlyPrice: null,
+				description: "Core safety and visibility for machines and work zones. Billed per machine.",
 				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
+					"Machine Assist AI human/object detection",
+					"Driver alerts and real-time proximity warnings",
+					"Centimeter-precision GNSS localization",
+					"Site OS dashboard (basic)",
+					"Production/material flow visualization",
+					"Business hours email support"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
+					label: "Request pricing",
+					href: "/contact"
 				}
 			},
 			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
+				name: "Advanced",
+				monthlyPrice: null,
+				yearlyPrice: null,
+				description: "Full platform use: live mapping, analytics, integrations, and priority onboarding. Billed per site.",
 				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
+					"Everything in Essentials",
+					"Eye visual module (crusher/belt monitoring)",
+					"Live Mapping (digital twin)",
+					"Fully featured Site OS (advanced visibility, zone management)",
+					"3rd-party system integrations via API",
+					"Training for field teams",
+					"Priority phone support",
+					"Operational review & analytics: quarterly"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=pro"
+					label: "Request pricing",
+					href: "/contact"
 				},
 				highlight: true
 			},
 			{
-				name: "Enterprise",
+				name: "Custom",
 				monthlyPrice: null,
 				yearlyPrice: null,
-				description: "For large organizations with specific needs",
+				description: "Sitewide or multi-site automation, dedicated services, and advanced support. Customized pricing.",
 				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
+					"Everything in Advanced",
+					"Loader Automation (zero-shot + language commands)",
+					"On-prem/hybrid data options",
+					"Bespoke integration and UI",
+					"Dedicated account + deployment team",
+					"24/7 support (phone/on-site)",
+					"Contractual SLAs, custom performance targets"
 				],
 				cta: {
-					label: "Contact sales",
+					label: "Contact enterprise team",
 					href: "/contact"
 				}
 			}

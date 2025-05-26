@@ -10,7 +10,28 @@
 	};
 
 	// Props
-	const { values = [] }: { values: Value[] } = $props();
+	const { values = [
+  {
+    title: 'Engineers first',
+    description: 'We solve hard, physical problems with code and sensors—not spreadsheets. Real product work in every role.'
+  },
+  {
+    title: 'Real outcomes over optics',
+    description: 'If it doesn’t make our machines safer or smarter, it’s not worth shipping. We focus on field value—not vanity metrics.'
+  },
+  {
+    title: 'Honest work with smart people',
+    description: 'No corporate layers. No politics. Just mutual respect, technical common sense, and curiosity about how far we can push the frontier.'
+  },
+  {
+    title: 'Diverse by default',
+    description: 'We strive for a mix of backgrounds, ideas, and experiences—better outcomes come from open minds.'
+  },
+  {
+    title: 'Ownership and support',
+    description: 'Everyone has skin in the game. We help each other, give direct feedback, and care about team success.'
+  }
+]: { values: Value[] } = $props();
 
 	let cards: HTMLElement[] = $state([]);
 

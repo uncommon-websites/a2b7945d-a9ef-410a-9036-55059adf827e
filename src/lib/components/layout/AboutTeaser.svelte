@@ -21,10 +21,9 @@ A minimalist teaser for the about page.
 
 	// Data
 	const teamMember: TeamMember = {
-		name: "Alex Morgan",
-		role: "Founder & CEO",
-		image:
-			"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+		name: "Bjarne Johannsen",
+		role: "Co-founder, sensmore",
+		image: "/generated/image-a-headshot-of-a-founder-wearing-high-vis.webp"
 	};
 </script>
 
@@ -33,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"Massive machines shouldn’t need babysitting. They should be able to handle complexity on their own."`}
 			/>
 
 			<!-- Team Member & CTA Section -->

@@ -53,107 +53,112 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="sensmore brings intelligent automation and AI to the world’s largest off-highway machines—improving safety, reducing downtime, and increasing efficiency for mining, construction, agriculture, and defense operations. Our integrated physical AI platform turns complex worksites into intelligent, responsive systems."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Elena Kohler",
+			position: "Site Manager, Ironway Mining",
+			company: "Ironway Mining",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image:
-				"https://images.unsplash.com/photo-1571513722275-4b41940f54b8?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"We've reduced crusher downtime by 27% since installing sensmore Eye. Its live alerts and level monitoring make a real difference.",
+			image: "/generated/image-a-female-mining-manager-at-a-site-wearin.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Lars Heldt",
+			position: "Director of Field Operations, Triton Construction",
+			company: "Triton Construction",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image:
-				"https://images.unsplash.com/photo-1600603405959-6d623e92445c?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"Machine Assist helped prevent two major collisions last quarter. It's become essential to keeping our crews safe.",
+			image: "/generated/image-a-male-construction-foreman-on-a-bustlin.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Monika Rey",
+			position: "Precision Ag Lead, GreenFields Co-op",
+			company: "GreenFields Co-op",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image:
-				"https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"With Site OS we cut route planning time by 40%. It’s made daily logistics smoother and reduced idle time across our fleet.",
+			image: "/generated/image-a-female-agriculture-specialist-in-a-coz.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
-	features={[
-		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
-		},
-		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
-		},
-		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
-		}
-	]}
+  title="Platform features"
+  subtitle="smarter machines. safer sites. proven results."
+  features={[
+    {
+      title: "Site OS",
+      description: "See everything on site in a single dashboard and manage operations as they happen. Plan zones, monitor material flow, and send updates to any machine instantly."
+    },
+    {
+      title: "Machine Assist",
+      description: "AI-powered collision warnings for people, vehicles, and obstacles—reliable in mud, rain, and darkness. Installs quickly and works with any heavy equipment."
+    },
+    {
+      title: "sensmore Eye",
+      description: "Real-time cameras and AI track stockpiles, crusher levels, boulders, and more—helping prevent downtime and improve material quality."
+    },
+    {
+      title: "Live Mapping",
+      description: "Every machine updates a live, digital map of your site. Instantly spot changes, track terrain, and plan from anywhere."
+    },
+    {
+      title: "Loader Automation",
+      description: "Autonomous load and carry for any site, powered by zero-shot AI. Machines understand new tasks—even simple language commands."
+    },
+    {
+      title: "Physical AI platform",
+      description: "German-engineered platform with layered, embodied intelligence keeps people safe and operations running—whatever the challenge."
+    }
+  ]}
 />
 
 <UseCases
-	generating
 	title="Use Cases"
 	subtitle="Real-world applications for your business needs"
 	useCases={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings.",
-			image:
-				"https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+			title: "Real-time site control in mining",
+			description: "Site OS dashboards let mine operators react instantly to material flow and terrain—reducing overfills, speeding up decision-making, and keeping production on schedule.",
+			image: "/generated/image-a-team-of-miners-in-safety-gear-working-.webp",
 			link: {
-				href: "/use-cases/workflows",
+				href: "/use-cases/mining-site-control",
 				label: "Learn more"
 			}
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2488&q=80",
+			title: "Collision prevention for construction crews",
+			description: "Machine Assist dramatically lowers incident risk by alerting operators to people, vehicles, and hazards in real time—working reliably in harsh conditions.",
+			image: "/generated/image-a-group-of-construction-workers-wearing-.webp",
 			link: {
-				href: "/use-cases/data-analysis",
-				label: "Explore analytics"
+				href: "/use-cases/construction-safety",
+				label: "See how"
 			}
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption.",
-			image:
-				"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+			title: "Autonomous loading in agriculture",
+			description: "Loader Automation keeps crops moving even with fewer hands—running material carry cycles on natural-language commands, day or night, no retraining needed.",
+			image: "/generated/image-farmers-working-together-in-an-agricultu.webp",
 			link: {
-				href: "/use-cases/collaboration",
-				label: "See security features"
+				href: "/use-cases/autonomous-loading-agriculture",
+				label: "Explore autonomy"
 			}
 		}
 	]}
 />
 
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+  title="Project operational peace of mind"
+  subtitle="Trusted AI that brings safer, smarter machines to your site"
+  description="sensmore makes heavy machinery intelligent—with automation that’s proven in the field, fast to deploy, and works on your existing fleet. Increase safety and productivity from day one—no surprises, no complex rollout."
+  imageSrc="/generated/image-a-cheerful-male-site-manager-in-a-mining.webp"
+  callsToAction={[
+    { href: '/book-demo', label: 'Book a demo', variant: 'primary' },
+    { href: '/contact', label: 'Contact sales', variant: 'secondary' }
+  ]}
+/>

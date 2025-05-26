@@ -64,7 +64,29 @@ export const navigation: NavItem[] = [
 		showInFooter: true,
 		children: [
 			{
-				label: "Healthcare",
+				label: "Mining site control",
+				href: "/use-cases/mining-site-control",
+				image: "/generated/image-a-team-of-miners-in-safety-gear-working-.webp",
+				description: "React faster to shifting material flow and terrain with Site OS. Operators keep mines safe, efficient, and operational—all in real time.",
+				showInNav: true,
+				showInFooter: true
+			},
+			{
+				label: "Construction safety",
+				href: "/use-cases/construction-safety",
+				image: "/generated/image-a-group-of-construction-workers-wearing-.webp",
+				description: "Machine Assist delivers live warnings for crews and vehicles in any weather—reducing incidents and keeping teams protected on every site.",
+				showInNav: true,
+				showInFooter: true
+			},
+			{
+				label: "Autonomous ag loading",
+				href: "/use-cases/autonomous-loading-agriculture",
+				image: "/generated/image-farmers-working-together-in-an-agricultu.webp",
+				description: "Put Loader Automation to work and keep crop cycles running—all day, all night, no manual retraining or oversight needed.",
+				showInNav: true,
+				showInFooter: true
+			}
 				href: "/use-cases/healthcare",
 				image:
 					"https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=1920&auto=format&fit=crop",
