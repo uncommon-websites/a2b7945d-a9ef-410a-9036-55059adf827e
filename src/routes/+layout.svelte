@@ -15,42 +15,42 @@
 	import { browser } from "$app/environment";
 	import { page } from "$app/state";
 	import { CONFIG } from "$lib/content";
-	import { navHeight } from "$lib/state/nav.svelte";
+	import { navHeight } from "$lib/state/nav.svelte.ts";
 
 	const isTouchDevice = new MediaQuery("(pointer: coarse)");
 
 	// Props
 	let { data, children } = $props();
 
-	// onMount(() => {
-	// 	if (!browser) return;
-	// 	const enterContainers = document.querySelectorAll("[data-enter-container]");
+	onMount(() => {
+		if (!browser) return;
+		const enterContainers = document.querySelectorAll("[data-enter-container]");
 
-	// 	enterContainers?.forEach((container) => {
-	// 		const elements = container.querySelectorAll("[data-enter]");
+		enterContainers?.forEach((container) => {
+			const elements = container.querySelectorAll("[data-enter]");
 
-	// 		elements.forEach((element) => {
-	// 			(element as HTMLElement).style.opacity = "0";
-	// 		});
-	// 	});
+			elements.forEach((element) => {
+				(element as HTMLElement).style.opacity = "0";
+			});
+		});
 
-	// 	inView("[data-enter-container]", (e) => {
-	// 		animate(
-	// 			e.querySelectorAll("[data-enter]"),
-	// 			{
-	// 				opacity: [0, 1],
-	// 				y: ["2rem", 0]
-	// 			},
-	// 			{
-	// 				duration: 0.4,
-	// 				ease: "circOut",
-	// 				delay: stagger(0.15, {
-	// 					ease: "easeInOut"
-	// 				})
-	// 			}
-	// 		);
-	// 	});
-	// });
+		inView("[data-enter-container]", (e) => {
+			animate(
+				e.querySelectorAll("[data-enter]"),
+				{
+					opacity: [0, 1],
+					y: ["2rem", 0]
+				},
+				{
+					duration: 0.4,
+					ease: "circOut",
+					delay: stagger(0.15, {
+						ease: "easeInOut"
+					})
+				}
+			);
+		});
+	});
 </script>
 
 <svelte:head>
