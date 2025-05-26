@@ -2,9 +2,9 @@
 
 @component CustomerCardHero
 
-This hero displays a row of customers. If used, we don't need a testimonial section on the same page.
+This hero displays a clean, Swiss-style interface with subtle gradient background.
+Designed with Apple-tier design principles for maximum visual impact.
 
-It should ALWAYS have between 3 and 5 customers!
 -->
 
 <script lang="ts">
@@ -14,22 +14,17 @@ It should ALWAYS have between 3 and 5 customers!
 
 	// Constants
 	import { cta } from "$lib/navigation";
-	import { onMount } from "svelte";
-	import StakeholderCard from "../sub/StakeholderCard.svelte";
-	import { animate, stagger } from "motion";
-
-	let cards: HTMLElement[] = $state([]);
 
 	// Types
 	type Props = {
 		centered?: boolean;
 		title: string;
 		subtitle: string;
-		customers: Array<{
+		customers?: Array<{
 			name: string;
 			position?: string;
 			imageSrc: string;
-		}>;
+		}>; // Legacy prop - no longer used
 		callsToAction?: Array<{
 			href: string;
 			label: string;
@@ -39,86 +34,157 @@ It should ALWAYS have between 3 and 5 customers!
 	let {
 		title,
 		subtitle,
-		customers = [],
+		customers = [], // Legacy prop - ignored
 		callsToAction = [cta],
-		centered = false,
+		centered = true, // Default to centered for Swiss design
 		...rest
 	}: Props = $props();
-
-	onMount(() => {
-		animate(
-			cards,
-			{
-				// y: ["50%", 0],
-				scale: [0.9, 1],
-				filter: ["blur(4px)", "blur(0px)"],
-				opacity: [0, 1]
-			},
-			{
-				duration: 0.5,
-				ease: "easeOut",
-				delay: stagger(0.1, {
-					startDelay: 0.5,
-					ease: "easeInOut"
-				})
-			}
-		);
-	});
 </script>
 
-<div class="bg-background h-screen flex flex-col" {...rest}>
-	<header
-		class={[
-			"section-px container mx-auto grid items-end gap-16 gap-y-9 text-balance flex-1",
-			centered ? "place-items-center py-16 text-center" : "mb-12 pt-24 xl:grid-cols-[1fr_auto]"
-		]}
-		data-enter-container
-	>
-		<div class="grid max-w-prose gap-6">
-			<h1 class="text-display w-full text-balance" data-enter>
-				<span class="block"><AnimateText text={title} /></span>
-			</h1>
-
-			<p
-				data-enter
-				class={[
-					"text-muted-foreground text-headline block  max-w-[45ch] text-pretty transition duration-500 ease-out",
-					centered && "mx-auto"
-					// isTitleComplete ? "opacity-100" : "translate-y-2 opacity-0 blur-sm"
-				]}
-			>
-				{subtitle}
-			</p>
-		</div>
-
-		{#if callsToAction.length > 0}
-			<div class="flex gap-4" data-enter>
-				{#each callsToAction as cta, index}
-					<Button
-						href={cta.href}
-						size="lg"
-						variant={index % 2 === 0 ? "primary" : "secondary"}
-						class="max-lg:hidden">{cta.label}</Button
-					>
-					<Button
-						href={cta.href}
-						size="md"
-						variant={index % 2 === 0 ? "primary" : "secondary"}
-						class="lg:hidden">{cta.label}</Button
-					>
-				{/each}
-			</div>
-		{/if}
-	</header>
-
+<section
+	class="relative min-h-screen flex items-center justify-center overflow-hidden"
+	{...rest}
+>
+	<!-- Sophisticated gradient background with premium Apple-style aesthetics -->
 	<div
-		class="section-px container mx-auto mt-4 grid flex-nowrap gap-(--card-gap) overflow-x-auto px-(--card-gap) whitespace-nowrap [--card-gap:calc(var(--radius)/2)] [--gap:--spacing(5)] max-lg:auto-cols-max max-lg:grid-flow-col md:whitespace-normal lg:grid-cols-[var(--cols)] lg:flex-wrap pb-16"
-		style:--cols="repeat({customers.length},1fr)"
-	>
-		{#each customers as customer, index}
-			<div class="h-full overflow-clip">
-				<StakeholderCard bind:cards {...customer} {index} />
+		class="absolute inset-0 bg-gradient-to-br from-slate-50/90 via-white to-blue-50/20"
+		aria-hidden="true"
+	></div>
+	
+	<!-- Multi-layered depth with subtle color transitions -->
+	<div
+		class="absolute inset-0 bg-gradient-to-t from-gray-50/30 via-transparent to-slate-100/40"
+		aria-hidden="true"
+	></div>
+	
+	<!-- Premium radial overlay for visual depth -->
+	<div
+		class="absolute inset-0 bg-radial-gradient opacity-40"
+		aria-hidden="true"
+	></div>
+
+	<!-- Premium Swiss design geometric accents -->
+	<div
+		class="absolute top-1/4 right-12 w-px h-40 bg-gradient-to-b from-transparent via-slate-300/30 to-transparent hidden lg:block"
+		aria-hidden="true"
+	></div>
+	<div
+		class="absolute bottom-1/4 left-12 w-px h-40 bg-gradient-to-b from-transparent via-slate-300/30 to-transparent hidden lg:block"
+		aria-hidden="true"
+	></div>
+	
+	<!-- Subtle corner accents for enhanced depth -->
+	<div
+		class="absolute top-8 left-8 w-16 h-px bg-gradient-to-r from-slate-200/40 to-transparent hidden xl:block"
+		aria-hidden="true"
+	></div>
+	<div
+		class="absolute bottom-8 right-8 w-16 h-px bg-gradient-to-l from-slate-200/40 to-transparent hidden xl:block"
+		aria-hidden="true"
+	></div>
+
+	<!-- Main content container -->
+	<div class="relative z-10 w-full max-w-6xl mx-auto section-px">
+		<header
+			class={[
+				"container mx-auto flex flex-col items-center justify-center text-center",
+				"min-h-[80vh] space-y-8"
+			]}
+			data-enter-container
+		>
+			<!-- Title with Swiss typography principles -->
+			<div class="max-w-4xl mx-auto space-y-6">
+				<h1 
+					class="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light tracking-tight text-gray-900 leading-[0.9] swiss-text" 
+					data-enter
+				>
+					<span class="block"><AnimateText text={title} /></span>
+				</h1>
+
+				<!-- Subtitle with generous spacing -->
+				<div class="max-w-2xl mx-auto">
+					<p
+						data-enter
+						class="text-xl md:text-2xl lg:text-3xl font-light text-gray-600 leading-relaxed tracking-wide swiss-text"
+					>
+						{subtitle}
+					</p>
+				</div>
 			</div>
-		{/each}
+
+			<!-- Call to actions with Apple-style spacing -->
+			{#if callsToAction.length > 0}
+				<div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8" data-enter>
+					{#each callsToAction as cta, index}
+						<Button
+							href={cta.href}
+							size="lg"
+							variant={index % 2 === 0 ? "primary" : "secondary"}
+							class="min-w-[200px] rounded-full px-8 py-3 text-lg font-medium transition-all duration-300 hover:shadow-lg hover:scale-[1.02] max-lg:hidden"
+						>
+							{cta.label}
+						</Button>
+						<Button
+							href={cta.href}
+							size="md"
+							variant={index % 2 === 0 ? "primary" : "secondary"}
+							class="min-w-[180px] rounded-full px-6 py-2.5 text-base font-medium transition-all duration-300 hover:shadow-lg hover:scale-[1.02] lg:hidden"
+						>
+							{cta.label}
+						</Button>
+					{/each}
+				</div>
+			{/if}
+		</header>
 	</div>
-</div>
+</section>
+
+<style>
+	/* Premium gradient system for sophisticated Apple-tier aesthetics */
+	section {
+		background: 
+			linear-gradient(
+				135deg,
+				rgba(248, 250, 252, 0.95) 0%,
+				rgba(255, 255, 255, 1) 30%,
+				rgba(255, 255, 255, 1) 70%,
+				rgba(241, 245, 249, 0.8) 100%
+			),
+			radial-gradient(
+				ellipse 120% 80% at 50% 0%,
+				rgba(219, 234, 254, 0.1) 0%,
+				transparent 50%
+			),
+			radial-gradient(
+				ellipse 80% 60% at 50% 100%,
+				rgba(229, 231, 235, 0.08) 0%,
+				transparent 50%
+			);
+	}
+
+	/* Custom radial gradient class for premium overlay */
+	.bg-radial-gradient {
+		background: radial-gradient(
+			ellipse 150% 100% at center top,
+			rgba(203, 213, 225, 0.06) 0%,
+			rgba(248, 250, 252, 0.03) 30%,
+			transparent 70%
+		);
+	}
+
+	/* Swiss typography refinements */
+	.swiss-text {
+		font-optical-sizing: auto;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	h1.swiss-text {
+		font-variation-settings: "wght" 300;
+	}
+
+	p.swiss-text {
+		font-variation-settings: "wght" 400;
+	}
+</style>

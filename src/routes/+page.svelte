@@ -18,33 +18,6 @@
     { href: '/book-demo', label: 'Book a demo' },
     { href: '/contact', label: 'See it in action' }
   ]}
-  customers={[
-    {
-      name: "Thomas Weber",
-      position: "Head of Quarry Operations, CEMEX",
-      imageSrc: "/generated/image-a-middle-aged-male-mining-operations-man.webp"
-    },
-    {
-      name: "Nicolai Hecker",
-      position: "Extraction Department, Lhoist",
-      imageSrc: "/generated/image-an-older-male-industrial-plant-superviso.webp"
-    },
-    {
-      name: "Christian Pothoff",
-      position: "Project Lead, Paus",
-      imageSrc: "/generated/image-christian-pothoff-an-engineer-is-at-an-i.webp"
-    },
-    {
-      name: "Elena Ivanova",
-      position: "Defense Operations Manager",
-      imageSrc: "/generated/image-elena-ivanova-a-female-defense-sector-fi.webp"
-    },
-    {
-      name: "Monica Schneider",
-      position: "Agriculture Supervisor",
-      imageSrc: "/generated/image-monica-schneider-a-female-agriculture-su.webp"
-    }
-  ]}
 />
 <LogoScroller
 	label="Trusted by industry leaders"
