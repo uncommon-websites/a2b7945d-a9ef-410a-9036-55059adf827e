@@ -29,6 +29,30 @@
 	]}
 />
 
+<section class="section-py section-px">
+	<div class="mx-auto max-w-6xl">
+		<div class="text-center section-pb-sm">
+			<h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+				See our technology in action
+			</h2>
+			<p class="mt-4 text-lg text-gray-600">
+				Watch how sensmore's Physical AI transforms heavy machinery operations
+			</p>
+		</div>
+		<div class="mx-auto max-w-4xl">
+			<div class="relative aspect-video overflow-hidden rounded-xl shadow-2xl bg-gray-900">
+				<iframe
+					src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+					title="sensmore Technology Demonstration"
+					class="absolute inset-0 h-full w-full"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+				></iframe>
+			</div>
+		</div>
+	</div>
+</section>
+
 <ZigZagFeatures
 	features={[
 		{
