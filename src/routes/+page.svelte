@@ -11,9 +11,12 @@
 
 <CustomerCardHero
   centered={true}
-  title="Proven performance for the world's toughest sites"
-  subtitle="Trusted by leaders at CEMEX and Lhoist, sensmore helps heavy machines work smarter—improving safety, cutting downtime, and keeping productivity on track."
-  callsToAction={[]}
+  title="Physical AI for the world's largest machines"
+  subtitle="Making heavy machinery intelligent, safe, and ready for every tough task. From mining and construction to agriculture and defense—reduce downtime by 30% while keeping people safe."
+  callsToAction={[
+    { href: '/book-demo', label: 'Book a demo' },
+    { href: '/contact', label: 'See it in action' }
+  ]}
   customers={[
     {
       name: "Thomas Weber",
@@ -26,9 +29,19 @@
       imageSrc: "/generated/image-an-older-male-industrial-plant-superviso.webp"
     },
     {
-      name: "Laura Schmidt",
-      position: "Project Manager, Construction",
-      imageSrc: "/generated/image-an-adult-female-project-manager-in-a-yel.webp"
+      name: "Christian Pothoff",
+      position: "Project Lead, Paus",
+      imageSrc: "/generated/image-christian-pothoff-an-engineer-is-at-an-i.webp"
+    },
+    {
+      name: "Elena Ivanova",
+      position: "Defense Operations Manager",
+      imageSrc: "/generated/image-elena-ivanova-a-female-defense-sector-fi.webp"
+    },
+    {
+      name: "Monica Schneider",
+      position: "Agriculture Supervisor",
+      imageSrc: "/generated/image-monica-schneider-a-female-agriculture-su.webp"
     }
   ]}
 />
