@@ -10,4 +10,10 @@ declare global {
 	}
 }
 
+declare module '~icons/*' {
+	import { ComponentType, SvelteComponent } from 'svelte';
+	const component: ComponentType<SvelteComponent>;
+	export default component;
+}
+
 export {};

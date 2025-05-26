@@ -6,6 +6,7 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
+	import ZigZagFeatures from "$lib/components/layout/ZigZagFeatures.svelte";
 	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
@@ -52,6 +53,56 @@
 		'https://logo.clearbit.com/cat.com',
 		'https://logo.clearbit.com/cemex.com',
 		'https://logo.clearbit.com/liebherr.com'
+	]}
+/>
+
+<ZigZagFeatures
+	features={[
+		{
+			title: "Real-time site control with Site OS",
+			description: "See everything happening on your site in a single dashboard. Monitor material flow, manage zones, and send instant updates to any machine. Get the operational intelligence you need to stay ahead of challenges and keep production flowing smoothly.",
+			imageSrc: "/generated/image-a-busy-mining-site-bustling-with-activit.webp",
+			callToAction: {
+				href: "/products/site-os",
+				label: "Explore Site OS"
+			}
+		},
+		{
+			title: "AI-powered collision prevention",
+			description: "Machine Assist provides real-time warnings for people, vehicles, and obstacles—working reliably in mud, rain, and darkness. Quick to install on any heavy equipment and proven to dramatically reduce incident risk on-site.",
+			imageSrc: "/generated/image-a-group-of-industrial-workers-clad-in-sa.webp",
+			callToAction: {
+				href: "/products/machine-assist",
+				label: "Learn about safety"
+			}
+		},
+		{
+			title: "Smart monitoring with sensmore Eye",
+			description: "AI-powered cameras continuously track stockpiles, crusher levels, boulder detection, and material quality. Get real-time alerts that help prevent costly downtime and optimize your material handling operations.",
+			imageSrc: "/generated/image-a-diverse-team-of-engineers-collaboratin.webp",
+			callToAction: {
+				href: "/products/eye",
+				label: "See Eye in action"
+			}
+		},
+		{
+			title: "Live digital mapping of your site",
+			description: "Every machine automatically updates a live, digital map of your site. Instantly spot terrain changes, track material movement, and plan operations from anywhere. Your site data, always current, always accessible.",
+			imageSrc: "/generated/image-an-autonomous-front-loader-in-action-at-.webp",
+			callToAction: {
+				href: "/products/live-mapping",
+				label: "Explore mapping"
+			}
+		},
+		{
+			title: "Autonomous operations with zero-shot AI",
+			description: "Loader Automation handles complex material tasks using natural language commands. No retraining needed—machines adapt instantly to new challenges. Run operations day or night with human-like intelligence built in.",
+			imageSrc: "/generated/image-a-joyful-industrial-worker-operating-a-l.webp",
+			callToAction: {
+				href: "/products/loader-automation",
+				label: "See autonomy"
+			}
+		}
 	]}
 />
 
