@@ -10,6 +10,9 @@
 
 	// Props
 	let { testimonials, ...rest }: { testimonials: Testimonial[] } = $props();
+	
+	// Ensure we always work with exactly 4 testimonials
+	let displayTestimonials = $derived(testimonials.slice(0, 4));
 
 	// State
 	let current = $state(0);
@@ -22,7 +25,7 @@
 
 	onMount(() => {
 		// Preload images
-		testimonials.forEach((testimonial) => {
+		displayTestimonials.forEach((testimonial) => {
 			if (testimonial.image) {
 				const img = new Image();
 				img.loading = "lazy";
@@ -92,7 +95,7 @@
 				}
 
 				scrollProgress = progress;
-				current = Math.min(Math.floor(progress * testimonials.length), testimonials.length - 1);
+				current = Math.min(Math.floor(progress * displayTestimonials.length), displayTestimonials.length - 1);
 				ticking = false;
 			});
 		};
@@ -127,7 +130,7 @@
 <section
 	bind:this={wrapperRef}
 	class="text-pretty [--gap:--spacing(4)]"
-	style="height: calc(100vh * {testimonials.length});"
+	style="height: calc(100vh * {displayTestimonials.length});"
 	{...rest}
 >
 	<div
@@ -140,7 +143,7 @@
 				"[--inner-radius:calc(var(--outer-radius)-var(--gap))] [--outer-radius:var(--radius)] lg:[--outer-radius:var(--radius-xl)]"
 			]}
 		>
-			{#each testimonials as testimonial}
+			{#each displayTestimonials as testimonial}
 				<article
 					class={[
 						"lg:container-xs  lg:min-w-[50%] lg:grid-cols-[2fr_3fr]",
@@ -190,7 +193,7 @@
 
 		<!-- Pagination Indicators -->
 		<div class="absolute bottom-8 left-1/2 flex -translate-x-1/2 justify-center gap-2">
-			{#each testimonials as _, index}
+			{#each displayTestimonials as _, index}
 				<div
 					class="focus:ring-primary-500 bg-emphasis-dim size-1.5 rounded-full transition-all duration-300 ease-in-out dark:bg-gray-700"
 					class:opacity-50={current !== index}
@@ -203,13 +206,3 @@
 	</div>
 </section>
 
-<style>
-	/* Hide scrollbar while preserving functionality */
-	.hide-scrollbar {
-		-ms-overflow-style: none;
-		scrollbar-width: none;
-	}
-	.hide-scrollbar::-webkit-scrollbar {
-		display: none;
-	}
-</style>

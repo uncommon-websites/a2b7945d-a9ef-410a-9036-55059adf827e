@@ -46,11 +46,35 @@
 	testimonials={[
 		{
 			name: "Elena Kohler",
-			position: "Site Manager, Ironway Mining",
+			position: "Site Manager",
 			company: "Ironway Mining",
 			quote:
 				"We've reduced crusher downtime by 27% since installing sensmore Eye. Its live alerts and level monitoring make a real difference.",
 			image: "/generated/image-a-female-mining-manager-at-a-site-wearin.webp"
+		},
+		{
+			name: "Thomas Weber",
+			position: "Head of Quarry Operations",
+			company: "CEMEX Rüdersdorf",
+			quote:
+				"sensmore's technology transformed our site operations. The real-time insights and safety features have made our quarry both more productive and safer.",
+			image: "/generated/image-a-mining-manager-named-thomas-weber-is-s.webp"
+		},
+		{
+			name: "Nicolai Hecker",
+			position: "Department for Extraction",
+			company: "Lhoist Flandersbach",
+			quote:
+				"Site OS and Machine Assist elevated our operations beyond expectations. The platform's intelligence helps us stay ahead of potential issues.",
+			image: "/generated/image-nicolai-hecker-a-construction-operations.webp"
+		},
+		{
+			name: "Christian Pothoff",
+			position: "Project Lead",
+			company: "Paus",
+			quote:
+				"Seeing autonomous LHD in action at sensmore's facility was impressive. The technology shows real promise for the future of heavy machinery.",
+			image: "/generated/image-christian-pothoff-an-engineer-is-at-an-i.webp"
 		}
 	]}
 />
