@@ -19,7 +19,7 @@
 	
 	<CustomerCardHero
 	  centered={true}
-	  title="Heavy machines that think ahead"
+	  title="Heavy machinery that think ahead"
 	  subtitle="Making heavy minds intelligent, safe, and ready for every tough task. Reduce downtime by 30% while keeping people safe."
 	  callsToAction={[
 	    { href: '/book-demo', label: 'Book a demo' },
