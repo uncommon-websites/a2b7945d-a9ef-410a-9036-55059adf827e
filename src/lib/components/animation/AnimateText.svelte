@@ -33,7 +33,7 @@
 	// });
 </script>
 
-<span class:show bind:this={element} style="text-wrap: balance;">
+<span class:show bind:this={element} style="text-wrap: balance; text-balance: balance;">
 	{#each (text || "").split(" ") as word, i}
 		<span
 			class="animated-word inline-block origin-left"
@@ -46,6 +46,18 @@
 </span>
 
 <style lang="postcss">
+	span {
+		/* Enhanced text balancing with fallbacks */
+		text-wrap: balance;
+		text-balance: balance;
+		/* Fallback for older browsers */
+		-webkit-text-balance: balance;
+		/* Additional text optimization */
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
 	.animated-word {
 		opacity: 0;
 	}
