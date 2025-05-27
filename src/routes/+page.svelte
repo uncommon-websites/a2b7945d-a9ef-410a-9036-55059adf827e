@@ -20,7 +20,7 @@
 	<CustomerCardHero
 	  centered={true}
 	  title="Heavy machinery that thinks ahead"
-	  subtitle="Making heavy machinery intelligent, safe, and ready for every tough task. From mining and construction to agriculture and defense—reduce downtime by 30% while keeping people safe."
+	  subtitle="Making heavy machinery intelligent, safe, and ready for every tough task. Reduce downtime by 30% while keeping people safe."
 	  callsToAction={[
 	    { href: '/book-demo', label: 'Book a demo' },
 	    { href: '/contact', label: 'See it in action' }
