@@ -20,12 +20,27 @@
 		color: rgba(255, 255, 255, 0.9) !important;
 	}
 	
+	/* Target the specific text color classes used in CustomerCardHero */
 	:global(.hero-section .text-gray-900) {
 		color: white !important;
 	}
 	
 	:global(.hero-section .text-gray-600) {
 		color: rgba(255, 255, 255, 0.8) !important;
+	}
+	
+	/* Additional targeting for the hero text elements */
+	:global(.hero-section h1.swiss-text) {
+		color: white !important;
+	}
+	
+	:global(.hero-section p.swiss-text) {
+		color: rgba(255, 255, 255, 0.85) !important;
+	}
+	
+	/* Override the CustomerCardHero background to be transparent since we have our own dark background */
+	:global(.hero-section section) {
+		background: transparent !important;
 	}
 </style>
 
