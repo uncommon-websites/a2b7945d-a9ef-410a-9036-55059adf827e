@@ -30,7 +30,7 @@
 </style>
 
 <!-- Hero section with industrial gradient background -->
-<div class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-700 to-blue-900">
+<div class="hero-section relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-700 to-blue-900">
 	<!-- Multi-layered industrial gradient for depth -->
 	<div class="absolute inset-0 bg-gradient-to-r from-blue-900/30 via-slate-800/20 to-gray-700/40"></div>
 	<div class="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-transparent to-slate-800/60"></div>
@@ -59,7 +59,7 @@
 				</p>
 			</div>
 			<div class="mx-auto max-w-4xl">
-				<div class="relative aspect-video overflow-hidden rounded-xl shadow-2xl bg-gray-900 ring-1 ring-gray-200/20">
+				<div class="relative aspect-video overflow-hidden rounded-xl shadow-2xl bg-gray-900 ring-1 ring-white/20 backdrop-blur-sm">
 					<iframe
 						src="https://www.youtube.com/embed/dQw4w9WgXcQ"
 						title="sensmore Technology Demonstration"
