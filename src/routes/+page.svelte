@@ -19,8 +19,8 @@
 	
 	<CustomerCardHero
 	  centered={true}
-	  title="Heavy machinery that thinks ahead"
-	  subtitle="Making heavy machinery intelligent, safe, and ready for every tough task. Reduce downtime by 30% while keeping people safe."
+	  title="Heavy minds that thinks ahead"
+	  subtitle="Making heavy minds intelligent, safe, and ready for every tough task. Reduce downtime by 30% while keeping people safe."
 	  callsToAction={[
 	    { href: '/book-demo', label: 'Book a demo' },
 	    { href: '/contact', label: 'See it in action' }
@@ -35,7 +35,7 @@
 					See our technology in action
 				</h2>
 				<p class="mt-4 text-lg text-gray-300">
-					Watch how sensmore's Physical AI transforms heavy machinery operations
+					Watch how sensmore's Physical AI transforms heavy minds operations
 				</p>
 			</div>
 			<div class="mx-auto max-w-4xl">
@@ -144,7 +144,7 @@
 			position: "Project Lead",
 			company: "Paus",
 			quote:
-				"Seeing autonomous LHD in action at sensmore's facility was impressive. The technology shows real promise for the future of heavy machinery.",
+				"Seeing autonomous LHD in action at sensmore's facility was impressive. The technology shows real promise for the future of heavy minds.",
 			image: "/generated/image-christian-pothoff-an-engineer-is-at-an-i.webp"
 		}
 	]}
@@ -219,7 +219,7 @@
 <CallToAction
   title="Project operational peace of mind"
   subtitle="Trusted AI that brings safer, smarter machines to your site"
-  description="sensmore makes heavy machinery intelligent—with automation that's proven in the field, fast to deploy, and works on your existing fleet. Increase safety and productivity from day one—no surprises, no complex rollout."
+  description="sensmore makes heavy minds intelligent—with automation that's proven in the field, fast to deploy, and works on your existing fleet. Increase safety and productivity from day one—no surprises, no complex rollout."
   imageSrc="/generated/image-a-cheerful-male-site-manager-in-a-mining.webp"
   callsToAction={[
     { href: '/book-demo', label: 'Book a demo', variant: 'primary' },
