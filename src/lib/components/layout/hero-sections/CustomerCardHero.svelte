@@ -114,7 +114,7 @@ Designed with Apple-tier design principles for maximum visual impact.
 				<div class="max-w-2xl mx-auto">
 					<p
 						data-enter
-						class="text-title2 text-gray-600"
+						class="text-title3 text-gray-600"
 					>
 						{subtitle}
 					</p>
