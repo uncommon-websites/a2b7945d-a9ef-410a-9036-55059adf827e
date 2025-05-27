@@ -129,7 +129,7 @@ Designed with Apple-tier design principles for maximum visual impact.
 							href={cta.href}
 							size="lg"
 							variant={index % 2 === 0 ? "primary" : "secondary"}
-							class="min-w-[200px] rounded-full px-8 py-3 text-lg font-medium transition-all duration-300 hover:shadow-lg hover:scale-[1.02] max-lg:hidden"
+							class="min-w-[200px] rounded-full px-8 py-3 text-lg font-medium transition-all duration-300 hover:scale-[1.02] max-lg:hidden"
 						>
 							{cta.label}
 						</Button>
@@ -137,7 +137,7 @@ Designed with Apple-tier design principles for maximum visual impact.
 							href={cta.href}
 							size="md"
 							variant={index % 2 === 0 ? "primary" : "secondary"}
-							class="min-w-[180px] rounded-full px-6 py-2.5 text-base font-medium transition-all duration-300 hover:shadow-lg hover:scale-[1.02] lg:hidden"
+							class="min-w-[180px] rounded-full px-6 py-2.5 text-base font-medium transition-all duration-300 hover:scale-[1.02] lg:hidden"
 						>
 							{cta.label}
 						</Button>
