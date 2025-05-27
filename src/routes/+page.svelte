@@ -10,47 +10,12 @@
 	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<style>
-	/* Override CustomerCardHero text colors for dark gradient background */
-	:global(.hero-section h1) {
-		color: white !important;
-	}
-	
-	:global(.hero-section p) {
-		color: rgba(255, 255, 255, 0.9) !important;
-	}
-	
-	/* Target the specific text color classes used in CustomerCardHero */
-	:global(.hero-section .text-gray-900) {
-		color: white !important;
-	}
-	
-	:global(.hero-section .text-gray-600) {
-		color: rgba(255, 255, 255, 0.8) !important;
-	}
-	
-	/* Additional targeting for the hero text elements */
-	:global(.hero-section h1.swiss-text) {
-		color: white !important;
-	}
-	
-	:global(.hero-section p.swiss-text) {
-		color: rgba(255, 255, 255, 0.85) !important;
-	}
-	
-	/* Override the CustomerCardHero background to be transparent since we have our own dark background */
-	:global(.hero-section section) {
-		background: transparent !important;
-	}
-</style>
+<!-- Typography styles now handled by design system -->
 
-<!-- Hero section with industrial gradient background -->
-<div class="hero-section relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-700 to-blue-900">
-	<!-- Multi-layered industrial gradient for depth -->
-	<div class="absolute inset-0 bg-gradient-to-r from-blue-900/30 via-slate-800/20 to-gray-700/40"></div>
-	<div class="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-transparent to-slate-800/60"></div>
-	<!-- Subtle earth tone overlay for heavy machinery aesthetic -->
-	<div class="absolute inset-0 bg-gradient-to-tr from-amber-900/10 via-transparent to-orange-900/5"></div>
+<!-- Hero section with clean background for black text -->
+<div class="hero-section relative overflow-hidden">
+	<!-- Clean background that works with black text -->
+	<div class="absolute inset-0 bg-white"></div>
 	
 	<CustomerCardHero
 	  centered={true}

@@ -92,20 +92,20 @@ Designed with Apple-tier design principles for maximum visual impact.
 			]}
 			data-enter-container
 		>
-			<!-- Title with Swiss typography principles -->
+			<!-- Title with proper typography system -->
 			<div class="max-w-4xl mx-auto space-y-6">
 				<h1 
-					class="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light tracking-tight text-gray-900 leading-[0.9] swiss-text" 
+					class="text-display text-black" 
 					data-enter
 				>
 					<span class="block"><AnimateText text={title} /></span>
 				</h1>
 
-				<!-- Subtitle with generous spacing -->
+				<!-- Subtitle with proper typography -->
 				<div class="max-w-2xl mx-auto">
 					<p
 						data-enter
-						class="text-xl md:text-2xl lg:text-3xl font-light text-gray-600 leading-relaxed tracking-wide swiss-text"
+						class="text-title2 text-black/80"
 					>
 						{subtitle}
 					</p>
@@ -172,19 +172,5 @@ Designed with Apple-tier design principles for maximum visual impact.
 		);
 	}
 
-	/* Swiss typography refinements */
-	.swiss-text {
-		font-optical-sizing: auto;
-		text-rendering: optimizeLegibility;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-
-	h1.swiss-text {
-		font-variation-settings: "wght" 300;
-	}
-
-	p.swiss-text {
-		font-variation-settings: "wght" 400;
-	}
+	/* Typography handled by design system */
 </style>
