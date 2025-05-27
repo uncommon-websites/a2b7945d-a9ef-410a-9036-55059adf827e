@@ -92,20 +92,20 @@ Designed with Apple-tier design principles for maximum visual impact.
 			]}
 			data-enter-container
 		>
-			<!-- Title with proper typography system -->
+			<!-- Title with refined typography system -->
 			<div class="max-w-4xl mx-auto space-y-6">
 				<h1 
-					class="text-display text-black" 
+					class="text-display text-gray-900" 
 					data-enter
 				>
 					<span class="block"><AnimateText text={title} /></span>
 				</h1>
 
-				<!-- Subtitle with proper typography -->
+				<!-- Subtitle with refined typography -->
 				<div class="max-w-2xl mx-auto">
 					<p
 						data-enter
-						class="text-title2 text-black/80"
+						class="text-title2 text-gray-600"
 					>
 						{subtitle}
 					</p>
