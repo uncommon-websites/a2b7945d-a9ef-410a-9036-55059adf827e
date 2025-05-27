@@ -19,7 +19,7 @@
 	
 	<CustomerCardHero
 	  centered={true}
-	  title="Physical AI for the world's largest machines"
+	  title="Heavy machinery that thinks ahead"
 	  subtitle="Making heavy machinery intelligent, safe, and ready for every tough task. From mining and construction to agriculture and defense—reduce downtime by 30% while keeping people safe."
 	  callsToAction={[
 	    { href: '/book-demo', label: 'Book a demo' },
